@@ -3,13 +3,14 @@ return {
   opts = {
     picker = {
       sources = {
+        files = { hidden = true },
+        grep = { hidden = true },
         explorer = {
-          -- This puts the explorer on the right
+          hidden = true,
           layout = {
-            layout = { position = "right" },
+            layout = { position = "right" }, -- This puts the explorer on the right
           },
-          -- Close explorer when opening a file
-          auto_close = true,
+          auto_close = true, -- Close explorer when opening a file
         },
       },
       -- On the github issue it says this puts "all sidebars" on the right
