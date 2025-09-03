@@ -10,7 +10,9 @@ return {
     opts.formatters = opts.formatters or {}
     opts.formatters.golines = {
       command = "golines",
-      args = { "--max-len=100" },
+      args = { "--max-len", "100", "--shorten-comments" },
     }
+
+    return opts
   end,
 }
