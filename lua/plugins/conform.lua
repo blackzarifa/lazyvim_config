@@ -13,7 +13,7 @@ return {
       args = { "--max-len", "100", "--shorten-comments" },
     }
     opts.formatters.prettier = {
-      prepend_args = { "--print-width", "100" },
+      prepend_args = { "--print-width", "100", "--arrow-parens", "avoid" },
     }
 
     return opts
