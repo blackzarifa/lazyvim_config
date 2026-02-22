@@ -12,6 +12,9 @@ return {
       command = "golines",
       args = { "--max-len", "100", "--shorten-comments" },
     }
+    opts.formatters.prettier = {
+      prepend_args = { "--print-width", "100" },
+    }
 
     return opts
   end,
