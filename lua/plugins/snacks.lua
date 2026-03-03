@@ -7,6 +7,7 @@ return {
         grep = { hidden = true },
         explorer = {
           hidden = true,
+          ignored = true,
           layout = {
             layout = { position = "right" }, -- This puts the explorer on the right
           },
